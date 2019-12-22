@@ -25,7 +25,7 @@ public class readFile {
 		myWriter.close(); 
 	 }
 	    public static void main(String[] args) {
-	    	int rowcount1;
+	    	int rowcount;
 	        Workbook workbook = null;
 	        try {
 
@@ -33,8 +33,8 @@ public class readFile {
 	            
 	            Sheet sheet = workbook.getSheet(0);
 	            rowcount=sheet.getRows();
-	            System.out.println(rowcount1);
-	            for(int i=1;i<rowcount1;i++)
+	            System.out.println(rowcount);
+	            for(int i=1;i<rowcount;i++)
 	            {
 	            	Cell cell1 = sheet.getCell(0,i);
 	            	System.out.println("filename");
